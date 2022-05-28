@@ -46,7 +46,7 @@ app.use((err, req, res, next) => {
 
 /* 서버와 포트 연결.. */
 const server = app.listen(app.get('port'), () => {
-    console.log(app.get('port'), '번 포트에서 서버 실행 중 ..')
+    console.log(app.get('port'), '번 포트에서 서버 실행 중 ...')
 });
 
 WebSocket(server); //ws와 http 포트 공유
